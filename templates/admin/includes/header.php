@@ -23,4 +23,9 @@
   <link rel="stylesheet" href="<?=base_url('templates/admin')?>/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="<?=base_url('templates/admin')?>/plugins/summernote/summernote-bs4.min.css">
+  <!-- toastr -->
+  <link rel="stylesheet" href="<?=base_url('templates/admin')?>/plugins/toastr/toastr.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="<?=base_url('templates/admin')?>/plugins/DataTables/datatables.min.css">
+  <?php include_once 'plugins.php' ?>
 </head>

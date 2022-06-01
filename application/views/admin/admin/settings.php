@@ -27,8 +27,9 @@
                     <?=form_open('admin/settings',['method'=>'post','class'=>'form-group'])?>
                         <div class="row mt-3">
                             <div class="col-md-6">
+                                <?php $email=empty(set_value('email'))?$email:set_value('email');?>
                                 <label>Username/Email Id <span class="text-danger">*</span></label>
-                                <input type="email" class="form-control <?=form_error('email')?'is-invalid':''?>" name="email" placeholder="Enter your username/email id" value="<?= $email ?>">
+                                <input type="text" class="form-control <?=form_error('email')?'is-invalid':''?>" name="email" placeholder="Enter your username/email id" value="<?= $email ?>">
                                 <?=form_error('email','<div class="invalid-feedback">','</div>')?>
                             </div>
                             <div class="col-md-6">

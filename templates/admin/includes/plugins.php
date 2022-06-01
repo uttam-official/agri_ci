@@ -32,9 +32,11 @@
 <script src="<?= base_url('templates/admin') ?>/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- sweetalert -->
 <script src="<?= base_url('templates/admin') ?>/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+<!-- toastr -->
+<script src="<?= base_url('templates/admin') ?>/plugins/toastr/toastr.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="<?= base_url('templates/admin') ?>/plugins/DataTables/datatables.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<?= base_url('templates/admin') ?>/dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?= base_url('templates/admin') ?>/dist/js/main.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="<?= base_url('templates/admin') ?>/dist/js/pages/dashboard.js"></script>

@@ -2,6 +2,7 @@
 <html lang="en">
 <?php include_once 'includes/header.php' ?>
 
+
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
         <?php include_once 'includes/preloader.php'?>
@@ -13,7 +14,6 @@
         </div>
         <!-- /.content-wrapper -->
         <?php include_once 'includes/footer.php' ?>
-        <?php include_once 'includes/plugins.php' ?>
         <?php include_once 'includes/js.php' ?>
     </div>
     <!-- ./wrapper -->

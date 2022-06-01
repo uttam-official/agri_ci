@@ -33,7 +33,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?=base_url('templates/admin')?>/components/subcategory/" class="nav-link">
+                    <a href="<?=base_url('admin/subcategory')?>" class="nav-link">
                         <i class="nav-icon fas fa-list-alt"></i>
                         <p>
                             Sub Category
@@ -41,7 +41,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?=base_url('templates/admin')?>/components/product/" class="nav-link">
+                    <a href="<?=base_url('admin/product')?>" class="nav-link">
                         <i class="nav-icon fa fa-box-open"></i>
                         <p>
                             Product
@@ -49,7 +49,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?=base_url('templates/admin')?>/components/order/" class="nav-link">
+                    <a href="<?=base_url('admin/order')?>" class="nav-link">
                         <i class="nav-icon fa fa-shopping-cart"></i>
                         <p>
                             Order
@@ -57,7 +57,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?=base_url('templates/admin')?>/components/discount/" class="nav-link">
+                    <a href="<?=base_url('admin/discount')?>" class="nav-link">
                         <i class="nav-icon fa fa-percent"></i>
                         <p>
                             Discount
@@ -65,7 +65,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?=base_url('templates/admin')?>/components/customer/" class="nav-link">
+                    <a href="<?=base_url('admin/customer')?>" class="nav-link">
                         <i class="nav-icon fa fa-user"></i>
                         <p>
                             Customer

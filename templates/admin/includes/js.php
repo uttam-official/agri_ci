@@ -43,3 +43,8 @@
         });
     });
 </script>
+<script>
+    $(document).ready(function() {
+        $('#category_table').DataTable();
+    });
+</script>

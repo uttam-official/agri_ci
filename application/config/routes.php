@@ -55,6 +55,11 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['admin/category']='admin/Category';
 $route['admin/category/(:any)']='admin/Category/$1';
+$route['admin/category/(:any)/(:num)']='admin/Category/$1/$2';
+
+$route['admin/subcategory']='admin/Subcategory';
+$route['admin/subcategory/(:any)']='admin/Subcategory/$1';
+$route['admin/subcategory/(:any)/(:num)']='admin/Subcategory/$1/$2';
 
 $route['admin']='admin/Admin';
 $route['admin/(:any)']='admin/Admin/$1';

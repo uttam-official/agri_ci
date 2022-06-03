@@ -1,15 +1,15 @@
-<?php defined('BASEPATH') OR exit('No script direct access allowed');?>
+<?php defined('BASEPATH') or exit('No script direct access allowed'); ?>
 <!-- Content Header (Page header) -->
 <div class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0">Subcategory</h1>
+                <h1 class="m-0">Discount coupon</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="<?= base_url('admin') ?>">Dashboard</a></li>
-                    <li class="breadcrumb-item">Subcategory</li>
+                    <li class="breadcrumb-item">Discount coupon</li>
                 </ol>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -23,7 +23,7 @@
         <!-- general form elements -->
         <div class="card card-outline card-info">
             <div class="text-right mt-3">
-                <a href="<?= base_url('admin/subcategory/add') ?>" class="btn btn-sm btn-success mr-3"><i class="fa fa-plus-circle"></i> Add
+                <a href="<?= base_url('admin/discount/add') ?>" class="btn btn-sm btn-success mr-3"><i class="fa fa-plus-circle"></i> Add
                     New</a>
             </div>
             <div class="card-body">
@@ -32,9 +32,10 @@
                         <thead>
                             <tr class="text-center table-secondary">
                                 <th>#</th>
-                                <th class="text-left">subcategory Name</th>
-                                <th>Order</th>
-                                <th>Parent Category</th>
+                                <th class="text-left">Discount Name</th>
+                                <th>Valid From</th>
+                                <th>Valid Till</th>
+                                <th>Amount</th>
                                 <th>Status</th>
                                 <th>Action</th>
                             </tr>
@@ -44,12 +45,13 @@
                                 <tr class="text-center">
                                     <td><?= $key + 1 ?></td>
                                     <td class="text-left"><?= $value->name ?></td>
-                                    <td><?= $value->categoryorder ?></td>
-                                    <td class="text-left"><?= $value->parent ?></td>
+                                    <td><?= $value->validfrom != null ? date('d-m-Y', strtotime($value->validfrom)) : '' ?></td>
+                                    <td><?= $value->validtill != null ? date('d-m-Y', strtotime($value->validtill)) : '' ?></td>
+                                    <td ><?= $value->amount ?></td>
                                     <td><?= $value->isactive ? '<span class="badge badge-primary">Active</span>' : '<span class="badge badge-secondary">Inactive</span>'; ?></td>
                                     <td>
-                                        <a href="<?= base_url('admin/subcategory/add/'.$value->id) ?>" class="btn btn-sm btn-outline-info" data-toggle="tooltip" title="Edit"><i class="fa fa-edit"></i></a>
-                                        <a href="<?= base_url('admin/subcategory/delete/'.$value->id)?>" class="btn btn-sm btn-outline-danger" data-toggle="tooltip" title="Delete"> <i class="fa fa-trash"></i></a>
+                                        <a href="<?= base_url('admin/discount/add/'.$value->id)  ?>" class="btn btn-sm btn-outline-info" data-toggle="tooltip" title="Edit"><i class="fa fa-edit"></i></a>
+                                        <a href="<?= base_url('admin/discount/delete/'.$value->id) ?>" class="btn btn-sm btn-outline-danger" data-toggle="tooltip" title="Delete"> <i class="fa fa-trash"></i></a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
@@ -68,14 +70,14 @@
 <!-- /.content -->
 
 
-<!-- extra -->
-<?php if ($this->session->flashdata('subcategory_error')) : ?>
+<!-- extra  -->
+<?php if ($this->session->flashdata('discount_error')) : ?>
     <script>
-        toastr.error("<?=$this->session->flashdata('subcategory_error')?>");
+        toastr.error("<?=$this->session->flashdata('discount_error')?>");
     </script>
 <?php endif; ?>
-<?php if ($this->session->flashdata('subcategory_success')) : ?>
+<?php if ($this->session->flashdata('discount_success')) : ?>
     <script>
-        toastr.success("<?=$this->session->flashdata('subcategory_success')?>");
+        toastr.success("<?=$this->session->flashdata('discount_success')?>");
     </script>
 <?php endif; ?>

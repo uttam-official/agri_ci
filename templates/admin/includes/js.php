@@ -27,7 +27,7 @@
         }
     }).addClass('active');
     //Dashboard
-    window.location.href == `${server}/agri/admin/` ? $('.dashboard').removeClass('bg-secondary').addClass('active') : $('.dashboard').removeClass('active').addClass('bg-secondary');
+    window.location.href == `<?=base_url('admin')?>` || window.location.href == `<?=base_url('admin').'/'?>` ? $('.dashboard').removeClass('bg-secondary').addClass('active') : $('.dashboard').removeClass('active').addClass('bg-secondary');
 
     // for the treeview
     $('ul.nav-treeview a').filter(function() {

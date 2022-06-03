@@ -61,6 +61,14 @@ $route['admin/subcategory']='admin/Subcategory';
 $route['admin/subcategory/(:any)']='admin/Subcategory/$1';
 $route['admin/subcategory/(:any)/(:num)']='admin/Subcategory/$1/$2';
 
+$route['admin/discount']='admin/Discount';
+$route['admin/discount/(:any)']='admin/Discount/$1';
+$route['admin/discount/(:any)/(:num)']='admin/Discount/$1/$2';
+
+$route['admin/product']='admin/Product';
+$route['admin/product/(:any)']='admin/Product/$1';
+$route['admin/product/(:any)/(:num)']='admin/Product/$1/$2';
+
 $route['admin']='admin/Admin';
 $route['admin/(:any)']='admin/Admin/$1';
 
